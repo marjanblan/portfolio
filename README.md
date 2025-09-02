@@ -13,3 +13,4 @@
 - Сетка/воздух: `tailwind.config.cjs` (spacing/fontSize) + классы в разметке.
 - Картинки-обложки: `public/work/*/cover.jpg`.
 - Тексты: страницы в `src/pages/...`.
+- trigger deploy
