@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Contact — Ruslan Mashkov">
+  <Fragment slot="header"><Header /></Fragment>
+  <h1 class="mcode-head text-m-xl mb-4">Contact</h1>
+  <ul class="space-y-2">
+    <li><a class="underline" href="mailto:ruslanmashkov@gmail.com">Email</a></li>
+    <li><a class="underline" href="https://t.me/marjanblan" target="_blank">Telegram</a></li>
+    <li><a class="underline" href="/cv/Ruslan_Mashkov_CV.pdf" target="_blank" download>Download CV (PDF)</a></li>
+  </ul>
+  <Fragment slot="footer"><Footer /></Fragment>
+</BaseLayout>

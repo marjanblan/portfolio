@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{ --mcode-bg:#ffffff; --mcode-fg:#0a0a0a; --mcode-accent:#EB5757; }
+html{ scroll-behavior:smooth; }
+body{ background:var(--mcode-bg); color:var(--mcode-fg); }
+.mcode-head{ letter-spacing:-0.05em; text-transform:uppercase; }
+.mcode-accent{ color:var(--mcode-accent); }
+.mcode-block{ padding:var(--mcode-block-py,32px) var(--mcode-block-px,32px); }
+.mcode-crop-2{ overflow:hidden; }
+.mcode-x-shift{ transform: translateX(var(--mcode-shift, 0px)); }
+.mcode-central{ width:min(100%, 980px); min-height:520px; }
+.mcode-half{ width:min(100%, 490px); min-height:260px; }
+@media (prefers-reduced-motion:no-preference){ .mcode-hover:hover{ transform:translateY(-2px);} }

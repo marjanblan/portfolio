@@ -1,0 +1,13 @@
+---
+const { href, title, tags = [], year, cover = '/og/og-default.jpg' } = Astro.props;
+---
+<a href={href} class="group block mcode-hover transition-transform duration-150">
+  <div class="aspect-video overflow-hidden rounded-2xl border">
+    <img src={cover} alt={title} loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition" />
+  </div>
+  <div class="flex items-center justify-between mt-3">
+    <h3 class="mcode-head text-m-lg">{title}</h3>
+    <span class="text-xs opacity-70">{year}</span>
+  </div>
+  <div class="text-xs opacity-70">{tags.join(' · ')}</div>
+</a>

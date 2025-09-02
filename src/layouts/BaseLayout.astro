@@ -1,0 +1,21 @@
+---
+const { title='Ruslan Mashkov — Portfolio', description='Digital Designer · Creative Coder · Art Direction' } = Astro.props;
+import '../styles/globals.css';
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/og/og-default.jpg" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{title}</title>
+  </head>
+  <body class="antialiased">
+    <slot name="header" />
+    <main class="mx-auto max-w-6xl px-4 py-10"><slot /></main>
+    <slot name="footer" />
+  </body>
+</html>
